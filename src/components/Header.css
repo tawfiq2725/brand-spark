@@ -1,0 +1,64 @@
+/* Style for header */
+.header {
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+
+ul li {
+  cursor: pointer;
+  padding-left: 10px;
+  color: #fff;
+}
+
+ul li:hover {
+  color: #086aff;
+}
+
+/* Style for the icon button */
+.icon-button {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile menu */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 1rem;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  z-index: 200;
+}
+
+/* Show the mobile menu with a smooth transition */
+.nav-menu.block {
+  max-height: 500px; /* Set a max height large enough to fit the menu */
+  opacity: 1;
+}
+
+/* Show menu inline for larger screens */
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    max-height: none;
+    opacity: 1;
+  }
+
+  .icon-button {
+    display: none;
+  }
+}
