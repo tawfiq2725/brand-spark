@@ -1,5 +1,6 @@
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Portfolio />
     </>
   );
 }

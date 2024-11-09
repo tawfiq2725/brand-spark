@@ -1,0 +1,128 @@
+/* Existing CSS for desktop view */
+@font-face {
+  font-family: "CustomFont";
+  src: url("./assets/font2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  height: auto;
+}
+
+.service {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 80px;
+}
+.service span {
+  color: #086aff;
+}
+.img {
+  width: 150px;
+  position: relative;
+  left: 120px;
+}
+
+.box {
+  border: 1px solid #086aff;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+}
+.box img {
+  width: 60px;
+}
+
+.box p {
+  font-size: 10px;
+  font-weight: 100;
+  line-height: 14px;
+}
+
+.box p,
+.box h4 {
+  color: white;
+}
+
+.right {
+  gap: 15px;
+}
+
+.first-off,
+.second-off {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Responsive layout for tablets (768px and below) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 20px 30px;
+    height: auto;
+  }
+
+  .left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .img {
+    position: static;
+    margin: 10px auto;
+  }
+
+  .service {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  /* Make boxes stack in a single column */
+  .right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-off,
+  .second-off {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%; /* Full width for better readability on smaller screens */
+    max-width: 300px;
+  }
+}
+
+/* Responsive layout for mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+  .service {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .box {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .img {
+    width: 120px;
+  }
+}

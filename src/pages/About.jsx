@@ -1,6 +1,5 @@
 import React from "react";
 import Call from "../components/Call";
-import "./Pages.css";
 import Aboutmain from "../components/Aboutmain";
 
 const About = () => {

@@ -1,3 +1,54 @@
+/* Base styling */
+.call {
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .call-btn {
   background-color: #082269;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  /* For tablets */
+  .call {
+    padding: 1.5rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .call-btn,
+  .call a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .call {
+    padding: 1rem;
+  }
+
+  .call p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .call-btn,
+  .call a {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    width: 100%;
+  }
+
+  .btns {
+    gap: 0.5rem;
+  }
 }

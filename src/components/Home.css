@@ -1,4 +1,52 @@
 .home-div {
   height: 600px;
   background-color: #082269;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://www.transparenttextures.com/patterns/smoke.png"),
+    rgba(0, 0, 0, 0.7); /* Smoky texture layer */
+  background-blend-mode: overlay;
+  opacity: 0.5; /* Adjust opacity to control smoky effect strength */
+  z-index: 1;
+}
+
+.home-div img {
+  width: 40%;
+  /* max-width: 300px;  */
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive layout for tablets (768px and below) */
+@media (max-width: 768px) {
+  .home-div {
+    height: 400px;
+  }
+
+  .home-div img {
+    width: 60%;
+  }
+}
+
+/* Responsive layout for mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .home-div {
+    height: 300px;
+  }
+
+  .home-div img {
+    width: 80%;
+  }
 }

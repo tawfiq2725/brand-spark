@@ -1,0 +1,113 @@
+/* ClientBanner.css */
+.client-banner-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.client-banner {
+  position: relative;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-banner span {
+  display: inline-block;
+  padding: 10px 50px;
+}
+
+/* Blue banner styling */
+.client-banner.blue {
+  background-color: #086aff;
+  color: white;
+  padding: 20px 0;
+  font-size: 24px;
+  transform: rotate(3deg);
+}
+
+/* White banner styling */
+.client-banner.white {
+  background-color: #fff;
+  color: #086aff;
+  padding: 20px 0;
+  font-size: 24px;
+  transform: rotate(356deg);
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .client-banner-container {
+    padding: 30px 0;
+  }
+
+  .client-banner {
+    font-size: 20px;
+  }
+
+  .client-banner span {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-banner-container {
+    padding: 20px 0;
+  }
+
+  .client-banner {
+    font-size: 18px;
+  }
+
+  .client-banner span {
+    padding: 6px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .client-banner-container {
+    padding: 15px 0;
+  }
+
+  .client-banner {
+    font-size: 16px;
+  }
+
+  .client-banner span {
+    padding: 5px 20px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .client-banner-container {
+    padding: 10px 0;
+  }
+
+  .client-banner {
+    font-size: 14px;
+  }
+
+  .client-banner span {
+    padding: 4px 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .client-banner-container {
+    padding: 5px 0;
+  }
+
+  .client-banner {
+    font-size: 12px;
+  }
+
+  .client-banner span {
+    padding: 3px 10px;
+  }
+}

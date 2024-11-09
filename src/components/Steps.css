@@ -1,0 +1,123 @@
+/* Steps.css */
+
+.steps-container {
+  text-align: center;
+  color: #ffffff;
+  background-color: #0d0d0d;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.steps-container h1 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  width: 280px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0px 15px;
+}
+
+/* Only apply rotation and custom position on desktop screens */
+@media (min-width: 1024px) {
+  #card1 {
+    transform: rotate(-5deg);
+    height: 350px;
+    width: 250px;
+    position: relative;
+    top: 50px;
+  }
+
+  #card2 {
+    transform: rotate(5deg);
+    height: 350px;
+    width: 250px;
+    position: relative;
+    top: 50px;
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+/* Background gradient glow */
+.steps-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.3), transparent);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(150px);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .steps-container h2 {
+    font-size: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .steps-container h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 240px;
+  }
+}
