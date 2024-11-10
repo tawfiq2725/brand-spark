@@ -17,9 +17,11 @@
       pointer-events: none;
       transform: translate(-50%, -50%);
       transition: 0.1s;
+      z-index: 3000;
     }
 
     .cursor2 {
+      z-index: 3000;
       position: fixed;
       width: 8px;
       height: 8px;
@@ -40,6 +42,8 @@
 
     .content:hover ~ .cursor2 {
       opacity: 0;
+      width: 10px;
+      height: 10px;
     }
   </style>
   <body>

@@ -15,6 +15,18 @@
   z-index: 2;
 }
 
+.blue-circle {
+  width: 1300px;
+  height: 1300px;
+  border-radius: 55%;
+  background-color: #08226a;
+  z-index: 1;
+  position: absolute;
+  right: -300px;
+  top: 100px;
+  bottom: 0px;
+}
+
 /* Responsive layout for tablets (768px and below) */
 @media (max-width: 768px) {
   .home-div {

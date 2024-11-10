@@ -6,6 +6,7 @@ const Homemain = () => {
   return (
     <div className="home-div w-full  flex justify-center items-center">
       <img src={mainImage} />
+      <div className="blue-circle"></div>
     </div>
   );
 };
