@@ -1,17 +1,18 @@
 /* Existing CSS for desktop view */
 @font-face {
   font-family: "CustomFont";
-  src: url("./assets/font2.otf") format("opentype");
+  src: url("/font/font2.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 .main {
   height: auto;
+  background-color: black;
+  padding: 30px 10px;
 }
-
 .service {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "CustomFont", sans-serif;
   font-size: 65px;
   font-weight: 800;
   line-height: 80px;

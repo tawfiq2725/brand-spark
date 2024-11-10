@@ -5,7 +5,7 @@ import "./Aboutmain.css";
 const Aboutmain = () => {
   return (
     <>
-      <div className="main flex justify-center">
+      <div className="main-about flex justify-center">
         <video className=" video" autoPlay loop muted width="700" height="200">
           <source src={video} type="video/mp4" />
         </video>

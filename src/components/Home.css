@@ -1,6 +1,6 @@
 .home-div {
-  height: 600px;
-  background-color: #082269;
+  height: 650px;
+  background: linear-gradient(to right, #071f63, #000, #000, #000, #071f63);
   position: relative;
   display: flex;
   justify-content: center;
@@ -8,24 +8,10 @@
   overflow: hidden;
 }
 
-.home-div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("https://www.transparenttextures.com/patterns/smoke.png"),
-    rgba(0, 0, 0, 0.7); /* Smoky texture layer */
-  background-blend-mode: overlay;
-  opacity: 0.5; /* Adjust opacity to control smoky effect strength */
-  z-index: 1;
-}
-
 .home-div img {
   width: 40%;
-  /* max-width: 300px;  */
   position: relative;
+  top: -100px;
   z-index: 2;
 }
 
