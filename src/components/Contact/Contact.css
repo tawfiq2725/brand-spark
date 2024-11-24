@@ -6,24 +6,24 @@
 }
 
 .contact-info {
-  position: sticky; /* Makes the element sticky */
-  top: 20px; /* Distance from the top of the viewport */
-  align-self: flex-start; /* Aligns it to the start of its container */
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Ensures items align at the start */
+  align-items: flex-start;
   gap: 20px;
 }
 
 .contact-form,
 .contact-info {
-  background-color: transparent;
+  background-color: black;
   padding: 50px;
   border-radius: 8px;
-  flex: 1 1 48%; /* Take 48% width on larger screens */
+  flex: 1 1 48%;
 }
 
 .contact-form h2 {
@@ -72,8 +72,8 @@
   padding-top: 20px;
 }
 .contact-form .checkbox-group label {
-  display: block; /* Vertical layout for checkboxes */
-  padding: 1px 0; /* Add padding between checkboxes */
+  display: block;
+  padding: 1px 0;
 }
 
 .contact-form button {

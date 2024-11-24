@@ -9,18 +9,18 @@ const Steps = () => {
         3 Steps to <br />
         Partner with US
       </h1>
-      <div className="cards">
-        <div className="card" id="card1">
+      <div className="card-steps">
+        <div className="card-step" id="card-step1">
           <img src="/elements/ser2.png" width="100" />
           <h3>Consultation</h3>
           <p>Define your vision and set clear goals with our experts.</p>
         </div>
-        <div className="card">
+        <div className="card-step">
           <img src="/elements/ser1.png" width="140" />
           <h3>Design & Development</h3>
           <p>Craft visually compelling, strategically effective solutions.</p>
         </div>
-        <div className="card" id="card2">
+        <div className="card-step" id="card-step2">
           <img src="/elements/ser3.png" width="100" />
           <h3>Review & Launch</h3>
           <p>Refine together and launch with impact, making it more premium.</p>

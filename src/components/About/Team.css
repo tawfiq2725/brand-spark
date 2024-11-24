@@ -1,0 +1,162 @@
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #000, #071f63 50%, #000);
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+/* Card Team */
+.card-team {
+  height: 350px;
+  position: absolute;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Team Image */
+.card-team__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Team Name */
+.card-team__name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Center Card */
+.card-team.center {
+  transform: translateX(0) scale(1.3);
+  opacity: 1;
+  z-index: 3;
+}
+
+.card-team.center .card-team__image {
+  transform: scale(1.2);
+}
+
+/* Right Card */
+.card-team.right {
+  transform: translateX(250px) scale(0.9);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+/* Left Card */
+.card-team.left {
+  transform: translateX(-250px) scale(0.9);
+  opacity: 0.8;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+/* Hidden Cards */
+.card-team.hidden {
+  opacity: 0;
+  transform: scale(0.7);
+  z-index: 0;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #ffffff;
+  color: #071f63;
+  border-radius: 100%;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #e7e4e4;
+  color: #071f63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-team__image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-team.right {
+    transform: translateX(180px) scale(0.8);
+  }
+
+  .card-team.left {
+    transform: translateX(-180px) scale(0.8);
+  }
+
+  .card-team__name {
+    font-size: 1rem;
+  }
+
+  .nav-button {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-team__image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-team.right {
+    transform: translateX(120px) scale(0.7);
+  }
+
+  .card-team.left {
+    transform: translateX(-120px) scale(0.7);
+  }
+
+  .card-team__name {
+    font-size: 0.9rem;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}

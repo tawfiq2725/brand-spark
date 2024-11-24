@@ -1,0 +1,140 @@
+/* Main container styling */
+.main-service {
+  width: 100%;
+  padding: 40px 30px;
+  background: linear-gradient(to right, #071f63, #000, #000, #000, #071f63);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.head-service {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.head-service h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Card container */
+.card-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual box styling */
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(50% - 30px);
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+/* Hover animation for boxes */
+.boxes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Consistent layout with image on the right */
+.left {
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.right p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 10px;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .boxes {
+    width: 100%;
+    flex-direction: row; /* Keeps image on the right */
+    padding: 25px;
+  }
+
+  .left img {
+    max-width: 200px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left img {
+    max-width: 150px;
+    margin-left: 0; /* Center image on small screens */
+  }
+
+  .right {
+    text-align: center; /* Center text for smaller screens */
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .head-service h1 {
+    font-size: 2rem;
+  }
+
+  .right h2 {
+    font-size: 1.2rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+  }
+
+  .left img {
+    max-width: 120px;
+  }
+}
