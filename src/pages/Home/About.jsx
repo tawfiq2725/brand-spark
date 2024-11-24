@@ -1,7 +1,7 @@
 import React from "react";
-import Call from "../components/Call";
-import Aboutmain from "../components/Aboutmain";
-import Clients from "../components/Clients";
+import Call from "../../components/Home/Call";
+import Aboutmain from "../../components/Home/Aboutmain";
+import Clients from "../../components/Home/Clients";
 
 const About = () => {
   return (

@@ -1,0 +1,202 @@
+/* Base Styles */
+.contact-page {
+  background: linear-gradient(to right, #071f63, #000, #000, #000, #071f63);
+  color: #fff;
+  padding: 10px;
+}
+
+.contact-info {
+  position: sticky; /* Makes the element sticky */
+  top: 20px; /* Distance from the top of the viewport */
+  align-self: flex-start; /* Aligns it to the start of its container */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensures items align at the start */
+  gap: 20px;
+}
+
+.contact-form,
+.contact-info {
+  background-color: transparent;
+  padding: 50px;
+  border-radius: 8px;
+  flex: 1 1 48%; /* Take 48% width on larger screens */
+}
+
+.contact-form h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.contact-info h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact-form label,
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.dpdn {
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+
+.contact-form .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+.checkbox-group {
+  padding-top: 20px;
+}
+.contact-form .checkbox-group label {
+  display: block; /* Vertical layout for checkboxes */
+  padding: 1px 0; /* Add padding between checkboxes */
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column; /* Stack form and info vertically */
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%; /* Take full width */
+    padding: 30px;
+  }
+
+  .contact-form .row {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .contact-form label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack form and info vertically */
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%; /* Take full width */
+    padding: 40px;
+  }
+
+  .contact-form .row {
+    flex-direction: row; /* Adjust spacing between rows */
+    gap: 10px;
+  }
+
+  .contact-form .row > div {
+    flex: 1 1 48%; /* Inputs take half the row's width */
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form select {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+/* Large screens (desktop) */
+@media (min-width: 769px) {
+  .contact-form .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure flexibility for large screens */
+    gap: 20px;
+  }
+
+  .contact-form .row > div {
+    flex: 1 1 48%; /* Each input-label pair takes approximately half width */
+    display: flex;
+    flex-direction: column; /* Align label above input */
+  }
+
+  .contact-form label {
+    font-size: 1.1rem; /* Slightly larger label for better readability */
+    margin-bottom: 8px; /* Add space between label and input */
+  }
+
+  .contact-form input,
+  .contact-form select {
+    font-size: 1rem; /* Ensure font size consistency */
+    padding: 12px; /* Add padding for better click/tap area */
+    border: 1px solid #555; /* Slightly darker border for better visibility */
+    border-radius: 6px; /* Smooth border radius */
+    background-color: #222;
+    color: #fff;
+  }
+
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set minimum height for better usability */
+  }
+
+  .checkbox-group label {
+    font-size: 1rem; /* Ensure consistent font size */
+    margin-bottom: 5px; /* Add space between checkboxes */
+  }
+
+  .contact-form button {
+    margin-top: 20px; /* Add space above the button */
+    font-size: 1.1rem; /* Slightly larger font for better visibility */
+    padding: 12px 20px; /* Increased padding for a larger button */
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/landing-main_icons.mp4";
+import video from "/video.mp4";
 import "./Aboutmain.css";
 
 const Aboutmain = () => {
