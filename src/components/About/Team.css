@@ -18,14 +18,22 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
 /* Card Team */
 .card-team {
-  height: 350px;
+  height: 300px;
+  width: 220px;
+  border-radius: 20px;
   position: absolute;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.7)
+  );
+
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -37,8 +45,8 @@
 
 /* Team Image */
 .card-team__image {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -47,8 +55,13 @@
 
 /* Team Name */
 .card-team__name {
+  padding: 20px 0;
   margin-top: 10px;
   font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.designation {
   color: #ffffff;
 }
 
@@ -75,7 +88,7 @@
   transform: translateX(-250px) scale(0.9);
   opacity: 0.8;
   z-index: 2;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 /* Hidden Cards */

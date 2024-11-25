@@ -3,12 +3,16 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Team.css";
 
 const teamMembers = [
-  { name: "Abby", image: "./Team/Abby.jpg" },
-  { name: "Cherian", image: "./Team/Cherian.jpeg.jpg" },
-  { name: "Gayathry", image: "./Team/Gayathry.jpeg.jpg" },
-  { name: "Induchoodan", image: "./Team/Induchoodan.jpeg.jpg" },
-  { name: "Joel", image: "./Team/Joel.jpg" },
-  { name: "Rohit", image: "./Team/Rohit.jpg" },
+  { name: "Abby", image: "./Team/Abby.jpg", designation: "dummy" },
+  { name: "Cherian", image: "./Team/Cherian.jpeg.jpg", designation: "dummy" },
+  { name: "Gayathry", image: "./Team/Gayathry.jpeg.jpg", designation: "dummy" },
+  {
+    name: "Induchoodan",
+    image: "./Team/Induchoodan.jpeg.jpg",
+    designation: "dummy",
+  },
+  { name: "Joel", image: "./Team/Joel.jpg", designation: "dummy" },
+  { name: "Rohit", image: "./Team/Rohit.jpg", designation: "dummy" },
 ];
 
 const Team = () => {
@@ -42,6 +46,7 @@ const Team = () => {
               alt={member.name}
             />
             <h3 className="card-team__name">{member.name}</h3>
+            <p className="designation">Designation : {member.designation}</p>
           </div>
         ))}
       </div>
